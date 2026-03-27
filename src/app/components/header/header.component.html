@@ -1,0 +1,59 @@
+
+<ion-header>
+  <ion-toolbar color="primary">
+
+    <ion-buttons slot="start"> 
+      <ion-button>ACK St James Koromosho</ion-button>
+    </ion-buttons>
+
+    <ion-buttons slot="end">
+      <ion-button (click)="toggleTheme()" > <ion-icon [name]="isDark ? 'moon-outline' : 'sunny-outline'" ></ion-icon> </ion-button>
+      <ion-button shape="round" fill="outline" >Give</ion-button>
+      <ion-button shape="round" fill="clear">Plan your visit</ion-button>
+
+    </ion-buttons>
+
+  </ion-toolbar>
+</ion-header>
+
+
+
+<!-- <ion-header class="gcc-header">
+  <div class="nav-wrapper">
+
+    <div class="brand">
+      <div class="logo">
+        <div class="logo-circle">
+          <div class="logo-cross"></div>
+        </div>
+      </div>
+      <div class="brand-text">
+        <div class="church-name">Grace Community Church</div>
+        <div class="tagline">Love God. Love People.</div>
+      </div>
+    </div>
+
+    <nav class="nav-links">
+      <button (click)="navigate('about')">About</button>
+      <button (click)="navigate('services')">Services</button>
+      <button (click)="navigate('events')">Events</button>
+      <button (click)="navigate('ministries')">Ministries</button>
+      <button (click)="navigate('sermons')">Sermons</button>
+      <button (click)="navigate('contact')">Contact</button>
+    </nav>
+
+    <div class="actions">
+      <button class="icon-btn" (click)="toggleTheme()">
+        <ion-icon [name]="isDark ? 'moon' : 'sunny'"></ion-icon>
+      </button>
+
+      <button class="pill-btn give-btn">
+        Give
+      </button>
+
+      <button class="pill-btn outline-btn">
+        Plan Your Visit
+      </button>
+    </div>
+  </div>
+</ion-header> -->
