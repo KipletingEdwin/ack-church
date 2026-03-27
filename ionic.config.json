@@ -1,0 +1,7 @@
+{
+  "name": "koromosho",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
