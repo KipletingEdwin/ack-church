@@ -1,2 +1,33 @@
-// For information on how to create your own theme, please refer to:
-// https://ionicframework.com/docs/theming/
+
+
+/* ----------------------------- */
+/* LIGHT THEME (default)         */
+/* ----------------------------- */
+:root {
+    --ion-background-color: #ffffff;
+    --ion-text-color: #1e1e1e;
+  
+    --header-bg: radial-gradient(circle at top left, #f3e8ff, #e0e7ff);
+    --header-text: #1e1e1e;
+  
+    --btn-outline-border: rgba(0, 0, 0, 0.2);
+    --btn-icon-bg: rgba(0, 0, 0, 0.05);
+  }
+
+
+
+  
+  /* ----------------------------- */
+  /* DARK THEME                    */
+  /* ----------------------------- */
+  .dark-theme {
+    --ion-background-color: #050816;
+    --ion-text-color: #ffffff;
+  
+    --header-bg: radial-gradient(circle at top left, #3b1f6b, #050816);
+    --header-text: #ffffff;
+  
+    --btn-outline-border: rgba(255, 255, 255, 0.3);
+    --btn-icon-bg: rgba(255, 255, 255, 0.1);
+  }
+  

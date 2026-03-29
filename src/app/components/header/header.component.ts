@@ -17,11 +17,12 @@ export class HeaderComponent  implements OnInit {
 
 
   toggleTheme() {
-    //document.body.classList.toggle('dark-theme', this.isDark);
     this.isDark = !this.isDark;
-    
+    document.body.classList.toggle('dark-theme', this.isDark);
   }
 
+
+  
 }
 
 

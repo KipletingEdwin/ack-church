@@ -8,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MainPage implements OnInit {
 
+  isDark: boolean = false;
+
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  toggleTheme(){
+    this.isDark = !this.isDark;
   }
 
 }
