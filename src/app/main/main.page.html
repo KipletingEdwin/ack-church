@@ -3,11 +3,9 @@
 
 <ion-header>
     <ion-toolbar>
-
         <ion-buttons slot="start">
             <ion-button [routerLink]="['']">ACK St James Koromosho</ion-button>
         </ion-buttons>
-
         <div class="ion-display-flex ion-align-items-center ion-justify-content-center">
             <ion-button fill="clear" [routerLink]="['./about']" >About</ion-button>
             <ion-button fill="clear" [routerLink]="['./services']">Services</ion-button>
@@ -16,16 +14,21 @@
             <ion-button fill="clear" [routerLink]="['./sermons']">Sermons</ion-button>
             <ion-button fill="clear" [routerLink]="['./contact']">Contact</ion-button>
         </div>
-
         <ion-buttons slot="end" >
             <ion-button (click)="toggleTheme()"><ion-icon [name]=" isDark ? 'moon-outline' : 'sunny-outline'"></ion-icon> </ion-button>
             <ion-button shape="round" fill="outline" >Give</ion-button>
             <ion-button shape="round" fill="solid" >Plan Your Visit</ion-button>
         </ion-buttons>
-
-
     </ion-toolbar>
 </ion-header>
+
+
+
+
+
+
+
+
 
 <ion-content>
     <ion-router-outlet>

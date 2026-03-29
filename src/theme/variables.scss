@@ -1,4 +1,5 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 /* ----------------------------- */
 /* LIGHT THEME (default)         */
@@ -7,11 +8,14 @@
     --ion-background-color: #ffffff;
     --ion-text-color: #1e1e1e;
   
-    --header-bg: radial-gradient(circle at top left, #f3e8ff, #e0e7ff);
-    --header-text: #1e1e1e;
+    // --header-bg: radial-gradient(circle at top left, #f3e8ff, #e0e7ff);
+    // --header-text: #1e1e1e;
   
-    --btn-outline-border: rgba(0, 0, 0, 0.2);
-    --btn-icon-bg: rgba(0, 0, 0, 0.05);
+    // --btn-outline-border: rgba(0, 0, 0, 0.2);
+    // --btn-icon-bg: rgba(0, 0, 0, 0.05);
+
+
+    --ion-font-family: 'Inter', sans-serif;
   }
 
 
