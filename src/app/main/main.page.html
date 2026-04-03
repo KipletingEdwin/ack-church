@@ -1,6 +1,4 @@
 
-<!-- <app-header></app-header> -->
-
 <ion-header>
     <ion-toolbar>
         <ion-buttons slot="start">
@@ -24,14 +22,16 @@
 
 
 
-
-
-
-
-
-
 <ion-content>
-    <ion-router-outlet>
 
+    <div *ngIf="isLoading" class="spinner-container">
+        <ion-spinner name="cresent"
+        ></ion-spinner>
+        <p>Loading page...</p>
+
+    </div>
+
+
+    <ion-router-outlet *ngIf="!isLoading" >
     </ion-router-outlet>
 </ion-content>

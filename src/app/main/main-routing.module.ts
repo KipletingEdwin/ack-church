@@ -10,10 +10,7 @@ const routes: Routes = [
     component: MainPage,
 
     children: [
-      // {
-      //   path: 'home',
-      //   loadChildren: () => import('../components/home/home.module').then( m => m.HomeComponentModule)
-      // },
+
       {
         path: 'about',
         loadChildren: () => import('../pages/about/about.module').then( m => m.AboutPageModule)
