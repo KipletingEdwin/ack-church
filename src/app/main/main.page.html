@@ -1,37 +1,41 @@
-
 <ion-header>
     <ion-toolbar>
-        <ion-buttons slot="start">
-            <ion-button [routerLink]="['']">ACK St James Koromosho</ion-button>
-        </ion-buttons>
-        <div class="ion-display-flex ion-align-items-center ion-justify-content-center">
-            <ion-button fill="clear" [routerLink]="['./about']" >About</ion-button>
-            <ion-button fill="clear" [routerLink]="['./services']">Services</ion-button>
-            <ion-button fill="clear" [routerLink]="['./events']">Events</ion-button>
-            <ion-button fill="clear" [routerLink]="['./ministries']">Ministries</ion-button>
-            <ion-button fill="clear" [routerLink]="['./sermons']">Sermons</ion-button>
-            <ion-button fill="clear" [routerLink]="['./contact']">Contact</ion-button>
-        </div>
-        <ion-buttons slot="end" >
-            <ion-button (click)="toggleTheme()"><ion-icon [name]=" isDark ? 'moon-outline' : 'sunny-outline'"></ion-icon> </ion-button>
-            <ion-button shape="round" fill="outline" >Give</ion-button>
-            <ion-button shape="round" fill="solid" >Plan Your Visit</ion-button>
-        </ion-buttons>
+      <!-- Logo / Title -->
+      <ion-buttons slot="start">
+        <ion-button [routerLink]="['/']" class="logo-btn">
+          ACK St James Koromosho
+        </ion-button>
+      </ion-buttons>
+  
+      <!-- Navigation Links (Centered) -->
+      <div class="ion-hide-md-down ion-text-center">
+        <ion-button fill="clear" [routerLink]="['./about']"  routerLinkActive="active-link">About</ion-button>
+        <ion-button fill="clear" [routerLink]="['./services']"  routerLinkActive="active-link">Services</ion-button>
+        <ion-button fill="clear" [routerLink]="['./events']"  routerLinkActive="active-link">Events</ion-button>
+        <ion-button fill="clear" [routerLink]="['./ministries']"  routerLinkActive="active-link">Ministries</ion-button>
+        <ion-button fill="clear" [routerLink]="['./sermons']"  routerLinkActive="active-link">Sermons</ion-button>
+        <ion-button fill="clear" [routerLink]="['./contact']"  routerLinkActive="active-link">Contact</ion-button>
+      </div>
+  
+      <!-- Actions -->
+      <ion-buttons slot="end">
+        <ion-button (click)="toggleTheme()">
+          <ion-icon [name]="isDark ? 'moon-outline' : 'sunny-outline'"></ion-icon>
+        </ion-button>
+        <ion-button shape="round" fill="outline">Give</ion-button>
+        <ion-button shape="round" fill="solid" color="primary">Plan Your Visit</ion-button>
+      </ion-buttons>
     </ion-toolbar>
-</ion-header>
-
-
-
-<ion-content>
-
-    <div *ngIf="isLoading" class="spinner-container">
-        <ion-spinner name="cresent"
-        ></ion-spinner>
-        <p>Loading page...</p>
-
+  </ion-header>
+  
+  <ion-content>
+    <!-- Loading State -->
+    <div *ngIf="isLoading" class="spinner-container ion-text-center">
+      <ion-spinner name="crescent"></ion-spinner>
+      <p>Loading page...</p>
     </div>
-
-
-    <ion-router-outlet *ngIf="!isLoading" >
-    </ion-router-outlet>
-</ion-content>
+  
+    <!-- Main View -->
+    <ion-router-outlet *ngIf="!isLoading"></ion-router-outlet>
+  </ion-content>
+  

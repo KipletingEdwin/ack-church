@@ -1,16 +1,160 @@
 
-<ion-toolbar></ion-toolbar>
+<ion-content> 
+  <ion-grid>
 
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>ministries</ion-title>
-  </ion-toolbar>
-</ion-header>
+    <ion-row class="ion-margin ion-align-items-center ion-justify-content-center" style="background-color: #7e22ce; color: #ffffff;">
+      <ion-col class="ion-text-center">
+        <h2 style="font-size: 3.75rem; font-weight: bold; " > Our Ministries </h2>
+        <p style="font-size: 18px; line-height: 1.5;"> Find your place in our church family. Whether you want to serve, learn, or connect, there's a ministry for you. </p>
+      </ion-col>
+    </ion-row>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">ministries</ion-title>
-    </ion-toolbar>
-  </ion-header>
+
+    <ion-row class="ion-padding">
+
+      <ion-col size="12" sizeMd="6" >
+        <ion-card class="ministry-card">
+          <ion-row class="ion-no-padding">
+            <ion-col size="5">
+              <ion-img src="../../../assets//ministries/children.jpeg" alt="children-ministry"
+              ></ion-img>
+            </ion-col>
+            <ion-col size="7">
+              <ion-card-header>
+                <ion-card-title>Children's Ministry</ion-card-title>
+              </ion-card-header>
+              <ion-card-content>
+                <p> Age-appropriate programs for infants through 5th grade, helping kids discover God's love through fun, interactive lessons.</p>
+                <hr style="border: 0; border-top: 1px solid #e0e0e0; margin: 20px 0;">
+                <p><ion-icon name="person-outline" class="ion-padding-end" ></ion-icon><span>Led by:</span> Sarah Johnson</p>
+                <p><ion-icon name="time-outline" class="ion-padding-end"></ion-icon><span>When:</span>Sundays during services</p>
+                <ion-button fill="clear" color="secondary"> Get Involved <ion-icon name="chevron-forward-outline" slot="end" ></ion-icon> </ion-button>
+              </ion-card-content>
+            </ion-col>
+          </ion-row>
+        </ion-card>
+      </ion-col>
+
+      <ion-col size="12" sizeMd="6" >
+        <ion-card class="ministry-card">
+          <ion-row class="ion-no-padding">
+            <ion-col size="5">
+              <ion-img src="../../../assets//ministries/youth.jpeg" alt="youth-ministry"
+              ></ion-img>
+            </ion-col>
+            <ion-col size="7">
+              <ion-card-header>
+                <ion-card-title>Youth Ministry</ion-card-title>
+              </ion-card-header>
+              <ion-card-content>
+                <p>A community for middle and high school students to grow in faith, build friendships, and make a difference.</p>
+                <hr style="border: 0; border-top: 1px solid #e0e0e0; margin: 20px 0;">
+                <p><ion-icon name="person-outline"  class="ion-padding-end"></ion-icon><span>Led by:</span>Pastor Mike Davis</p>
+                <p><ion-icon name="time-outline"  class="ion-padding-end"></ion-icon><span>When:</span>Fridays 6:30 PM</p>
+                <ion-button fill="clear" color="secondary"> Get Involved <ion-icon name="chevron-forward-outline" slot="end" ></ion-icon> </ion-button>
+              </ion-card-content>
+            </ion-col>
+          </ion-row>
+        </ion-card>
+      </ion-col>
+
+      <ion-col size="12" sizeMd="6" >
+        <ion-card class="ministry-card">
+          <ion-row class="ion-no-padding">
+            <ion-col size="5">
+              <ion-img src="../../../assets//ministries/small.jpeg" alt="small-groups"
+              ></ion-img>
+            </ion-col>
+            <ion-col size="7">
+              <ion-card-header>
+                <ion-card-title>Small Groups</ion-card-title>
+              </ion-card-header>
+              <ion-card-content>
+                <p>Connect with others in a smaller setting for Bible study, prayer, and authentic community. Groups meet throughout the week.</p>
+                <hr style="border: 0; border-top: 1px solid #e0e0e0; margin: 20px 0;">
+                <!-- <p><ion-icon name="person-outline"></ion-icon><span>Led by:</span> Sarah Johnson</p> -->
+                <p><ion-icon name="time-outline" class="ion-padding-end"></ion-icon><span>When:</span>Various times</p>
+                <ion-button fill="clear" color="secondary"> Get Involved <ion-icon name="chevron-forward-outline" slot="end" ></ion-icon> </ion-button>
+              </ion-card-content>
+            </ion-col>
+          </ion-row>
+        </ion-card>
+      </ion-col>
+
+      <ion-col size="12" sizeMd="6" >
+        <ion-card class="ministry-card">
+          <ion-row class="ion-no-padding">
+            <ion-col size="5">
+              <ion-img src="../../../assets//ministries/worship.jpeg" alt="worship-team"
+              ></ion-img>
+            </ion-col>
+            <ion-col size="7">
+              <ion-card-header>
+                <ion-card-title>Worship Team</ion-card-title>
+              </ion-card-header>
+              <ion-card-content>
+                <p>Use your musical gifts to lead our congregation in worship. Auditions held quarterly.</p>
+                <hr style="border: 0; border-top: 1px solid #e0e0e0; margin: 20px 0;">
+                <p><ion-icon name="person-outline" class="ion-padding-end"></ion-icon><span>Led by:</span> David Chen</p>
+                <p><ion-icon name="time-outline" class="ion-padding-end"></ion-icon><span>When:</span>Thursdays 7:00 PM</p>
+                <ion-button fill="clear" color="secondary"> Get Involved <ion-icon name="chevron-forward-outline" slot="end" ></ion-icon> </ion-button>
+              </ion-card-content>
+            </ion-col>
+          </ion-row>
+        </ion-card>
+      </ion-col>
+
+      <ion-col size="12" sizeMd="6" >
+        <ion-card class="ministry-card">
+          <ion-row class="ion-no-padding">
+            <ion-col size="5">
+              <ion-img src="../../../assets//ministries/outreach.jpeg" alt="outreach-and-missions"
+              ></ion-img>
+            </ion-col>
+            <ion-col size="7">
+              <ion-card-header>
+                <ion-card-title>Outreach & Missions</ion-card-title>
+              </ion-card-header>
+              <ion-card-content>
+                <p>Serve locally and globally through community service projects, mission trips, and partner support.</p>
+                <hr style="border: 0; border-top: 1px solid #e0e0e0; margin: 20px 0;">
+                <p><ion-icon name="person-outline"></ion-icon><span>Led by:</span>Pastor Rachel Kim</p>
+                <!-- <p><ion-icon name="time-outline"></ion-icon><span>When:</span>Sundays during services</p> -->
+                <ion-button fill="clear" color="secondary" class="ion-padding-end"> Get Involved <ion-icon name="chevron-forward-outline" slot="end" ></ion-icon> </ion-button>
+              </ion-card-content>
+            </ion-col>
+          </ion-row>
+        </ion-card>
+      </ion-col>
+
+      <ion-col size="12" sizeMd="6" >
+        <ion-card class="ministry-card">
+          <ion-row class="ion-no-padding">
+            <ion-col size="5">
+              <ion-img src="../../../assets//ministries/care.jpeg" alt="care-ministry"
+              ></ion-img>
+            </ion-col>
+            <ion-col size="7">
+              <ion-card-header>
+                <ion-card-title>Care Ministry</ion-card-title>
+              </ion-card-header>
+              <ion-card-content>
+                <p>Providing practical support to those in need through meals, visits, prayer, and encouragement.</p>
+                <hr style="border: 0; border-top: 1px solid #e0e0e0; margin: 20px 0;">
+                <p><ion-icon name="person-outline"></ion-icon><span>Led by:</span> Linda Martinez</p>
+                <p><ion-icon name="time-outline" class="ion-padding-end"></ion-icon><span>When:</span>Sundays during services</p>
+                <ion-button fill="clear" color="secondary"> Get Involved <ion-icon name="chevron-forward-outline" slot="end" ></ion-icon> </ion-button>
+              </ion-card-content>
+            </ion-col>
+          </ion-row>
+        </ion-card>
+      </ion-col>
+
+
+
+
+    </ion-row>
+
+
+  </ion-grid>
 </ion-content>

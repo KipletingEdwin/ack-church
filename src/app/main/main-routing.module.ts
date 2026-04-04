@@ -12,6 +12,11 @@ const routes: Routes = [
     children: [
 
       {
+        path: '',
+        redirectTo: 'home',
+        pathMatch: 'full'
+      },
+      {
         path: 'about',
         loadChildren: () => import('../pages/about/about.module').then( m => m.AboutPageModule)
       },
@@ -35,9 +40,6 @@ const routes: Routes = [
         path: 'contact',
         loadChildren: () => import('../pages/contact/contact.module').then( m => m.ContactPageModule)
       },
-
-
-
 
     ]
   }
