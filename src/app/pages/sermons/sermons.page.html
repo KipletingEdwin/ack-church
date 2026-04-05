@@ -1,17 +1,149 @@
 
 <ion-content> 
-<ion-toolbar></ion-toolbar>
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>sermons</ion-title>
-  </ion-toolbar>
-</ion-header>
+  <ion-grid>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">sermons</ion-title>
-    </ion-toolbar>
-  </ion-header>
-</ion-content>
+
+    <ion-row style="background-color: #7e22ce; color: #ffffff;">
+      <ion-col class="ion-text-center">
+        <h2 style="font-size: 3.75rem; font-weight: bold;">Sermons</h2>
+        <p style="font-size: 18px; line-height: 1.5;">Missed a Sunday? Catch up on our latest messages or explore our sermon archive.</p>
+      </ion-col>
+    </ion-row>
+
+
+
+    <ion-row>
+      <ion-col class="ion-margin" >
+        <h3>Latest Message</h3>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col size="6">
+        <ion-img src="../../../assets/sermons/sermons.jpg"
+        ></ion-img>
+      </ion-col>
+      <ion-col>
+        <ion-button shape="round" fill="clear" >Faith Over Fear</ion-button>
+        <h2>Finding Peace in Uncertain Times</h2>
+        <p>Pastor James Thompson • March 3, 2025</p>
+        <p>Discover how to experience God's peace even when life feels chaotic and uncertain.</p>
+        <ion-button shape="round" size="large" ><ion-icon name="caret-forward" slot="start" ></ion-icon>Watch Now</ion-button>
+        <ion-button shape="round" color="tertiary" size="large"><ion-icon name="mic-off-circle"></ion-icon>Listen</ion-button>
+      </ion-col>
+    </ion-row>
+
+
+    <ion-row class="ion-margin">
+
+      <ion-col size="12" sizeMd="6" sizeLg="4" style="border-radius: 10px;">
+        <ion-card>
+          <ion-row class="ion-no-padding">
+            <ion-col size="12">
+              <ion-img src="../../../assets/sermons/sermons.jpg"
+              ></ion-img>
+            </ion-col>
+            <ion-col size="12">
+              <ion-card-header>
+                <ion-card-subtitle>Better Together</ion-card-subtitle>
+                <ion-card-title>The Power of Community</ion-card-title>
+                <ion-card-subtitle>Pastor Rachel Kim • February 24, 2025</ion-card-subtitle>
+              </ion-card-header>
+              <ion-card-content></ion-card-content>
+              <ion-card-content></ion-card-content>
+              <p>Why we need each other and how authentic community transforms our lives.</p>
+              <ion-button color="tertiary" fill="clear"><ion-icon name="caret-forward" slot="start" ></ion-icon>Watch</ion-button>
+              <ion-button shape="round" fill="clear" color="tertiary"><ion-icon name="mic-off-circle"></ion-icon>Listen</ion-button>
+            </ion-col>
+          </ion-row>
+        </ion-card>
+      </ion-col>
+
+      <ion-col size="12" sizeMd="6" sizeLg="4" style="border-radius: 10px;">
+        <ion-card>
+          <ion-row class="ion-no-padding">
+            <ion-col size="12">
+              <ion-img src="../../../assets/sermons/sermons.jpg"
+              ></ion-img>
+            </ion-col>
+            <ion-col size="12">
+              <ion-card-header>
+                <ion-card-subtitle>Created for More</ion-card-subtitle>
+                <ion-card-title>Living with Purpose</ion-card-title>
+                <ion-card-subtitle>Pastor James Thompson • February 17, 2025</ion-card-subtitle>
+              </ion-card-header>
+              <ion-card-content></ion-card-content>
+              <ion-card-content></ion-card-content>
+              <p>Uncover God's unique purpose for your life and learn how to live it out daily.</p>
+              <ion-button color="tertiary" fill="clear"><ion-icon name="caret-forward" slot="start" ></ion-icon>Watch</ion-button>
+              <ion-button shape="round" fill="clear" color="tertiary"><ion-icon name="mic-off-circle"></ion-icon>Listen</ion-button>
+            </ion-col>
+          </ion-row>
+        </ion-card>
+      </ion-col>
+
+      <ion-col size="12" sizeMd="6" sizeLg="4" style="border-radius: 10px;">
+        <ion-card>
+          <ion-row class="ion-no-padding">
+            <ion-col size="12">
+              <ion-img src="../../../assets/sermons/sermons.jpg"
+              ></ion-img>
+            </ion-col>
+            <ion-col size="12">
+              <ion-card-header>
+                <!-- <ion-card-subtitle>Better Together</ion-card-subtitle> -->
+                <ion-card-title>Grace That Changes Everything</ion-card-title>
+                <ion-card-subtitle>Pastor James Thompson • February 10, 2025</ion-card-subtitle>
+              </ion-card-header>
+              <ion-card-content></ion-card-content>
+              <ion-card-content></ion-card-content>
+              <p>Understanding the depth of God's grace and how it transforms our identity.</p>
+              <ion-button color="tertiary" fill="clear"><ion-icon name="caret-forward" slot="start" ></ion-icon>Watch</ion-button>
+              <ion-button shape="round" fill="clear" color="tertiary"><ion-icon name="mic-off-circle"></ion-icon>Listen</ion-button>
+            </ion-col>
+          </ion-row>
+        </ion-card>
+      </ion-col>
+
+
+
+
+
+
+
+    </ion-row>
+
+
+
+
+
+
+    <!-- ////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+    <!-- <ion-col size="12" sizeMd="6" >
+      <ion-card class="ministry-card">
+        <ion-row class="ion-no-padding">
+          <ion-col size="5">
+            <ion-img src="../../../assets//ministries/children.jpeg" alt="children-ministry"
+            ></ion-img>
+          </ion-col>
+          <ion-col size="7">
+            <ion-card-header>
+              <ion-card-title>Children's Ministry</ion-card-title>
+            </ion-card-header>
+            <ion-card-content>
+              <p> Age-appropriate programs for infants through 5th grade, helping kids discover God's love through fun, interactive lessons.</p>
+              <hr style="border: 0; border-top: 1px solid #e0e0e0; margin: 20px 0;">
+              <p><ion-icon name="person-outline" class="ion-padding-end" ></ion-icon><span>Led by:</span> Sarah Johnson</p>
+              <p><ion-icon name="time-outline" class="ion-padding-end"></ion-icon><span>When:</span>Sundays during services</p>
+              <ion-button fill="clear" color="secondary"> Get Involved <ion-icon name="chevron-forward-outline" slot="end" ></ion-icon> </ion-button>
+            </ion-card-content>
+          </ion-col>
+        </ion-row>
+      </ion-card>
+    </ion-col> -->
+
+
+
+  </ion-grid>
 </ion-content>
